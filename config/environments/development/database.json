@@ -7,7 +7,7 @@
         "uri": "${process.env.DATABASE_URI}"
       },
       "options": {
-        "ssl": true
+        "ssl": false
       }
     }
   }
