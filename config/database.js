@@ -11,7 +11,7 @@ module.exports = ({ env }) => ({
         // username: env('DATABASE_USERNAME', null),
         // password: env('DATABASE_PASSWORD', null),
 
-        "uri": "mongodb://charles:Alexmuir39@cluster0-shard-00-00.rhldv.mongodb.net:27017,cluster0-shard-00-01.rhldv.mongodb.net:27017,cluster0-shard-00-02.rhldv.mongodb.net:27017/myFirstDatabase?ssl=true&replicaSet=atlas-xp052l-shard-0&authSource=admin&retryWrites=true&w=majority"
+        "uri": env(DATABASE_URI, null)
       },
       options: {
         authenticationDatabase: env('AUTHENTICATION_DATABASE', null),
